@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Conversate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kih-fh-5Wx">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="341" id="Akc-A6-9EL"/>
+                                    <constraint firstAttribute="height" constant="324" id="Wae-Xl-Qfj"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Akc-A6-9EL"/>
+                                        <exclude reference="Wae-Xl-Qfj"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <exclude reference="Akc-A6-9EL"/>
+                                        <exclude reference="Wae-Xl-Qfj"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="9ns-jn-9Ds" kind="embed" id="kCv-VN-gID"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.2102259792" green="0.27767965680000001" blue="0.40408452109999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Kih-fh-5Wx" secondAttribute="trailing" constant="37" id="FU4-q8-oY6"/>
+                            <constraint firstItem="Kih-fh-5Wx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HYi-P2-n4g"/>
+                            <constraint firstItem="Kih-fh-5Wx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="M5h-8m-WUh"/>
+                            <constraint firstItem="Kih-fh-5Wx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cso-Dd-HvL"/>
+                            <constraint firstItem="Kih-fh-5Wx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="f5R-5X-bHe"/>
+                            <constraint firstItem="Kih-fh-5Wx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="128" id="jB1-q5-Fm2"/>
+                            <constraint firstItem="Kih-fh-5Wx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="190" id="nqw-e9-oQg"/>
+                            <constraint firstItem="Kih-fh-5Wx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="shk-v6-u3W"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Kih-fh-5Wx"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="FU4-q8-oY6"/>
+                                <exclude reference="HYi-P2-n4g"/>
+                                <exclude reference="M5h-8m-WUh"/>
+                                <exclude reference="cso-Dd-HvL"/>
+                                <exclude reference="f5R-5X-bHe"/>
+                                <exclude reference="jB1-q5-Fm2"/>
+                                <exclude reference="nqw-e9-oQg"/>
+                                <exclude reference="shk-v6-u3W"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="Kih-fh-5Wx"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="FU4-q8-oY6"/>
+                                <include reference="HYi-P2-n4g"/>
+                                <exclude reference="M5h-8m-WUh"/>
+                                <exclude reference="cso-Dd-HvL"/>
+                                <include reference="f5R-5X-bHe"/>
+                                <include reference="jB1-q5-Fm2"/>
+                                <exclude reference="nqw-e9-oQg"/>
+                                <include reference="shk-v6-u3W"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="441" y="422.25"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Lso-Em-wmh">
+            <objects>
+                <viewController id="9ns-jn-9Ds" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oCF-lp-mAo"/>
+                        <viewControllerLayoutGuide type="bottom" id="7lZ-z4-2kw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jgk-ug-egw">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ky7-U5-kk1">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                    <rect key="frame" x="31" y="171" width="266" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tmc-EO-bCZ">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="31" y="225" width="266" height="30"/>
+                                </variation>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Conversate Cut (2) (1).png" translatesAutoresizingMaskIntoConstraints="NO" id="Qq4-Nk-HdH">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="29" y="59" width="266" height="72"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pX8-7n-pzM">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="31" y="304" width="266" height="49"/>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ky7-U5-kk1"/>
+                                <exclude reference="Tmc-EO-bCZ"/>
+                                <exclude reference="Qq4-Nk-HdH"/>
+                                <exclude reference="pX8-7n-pzM"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="ky7-U5-kk1"/>
+                                <include reference="Tmc-EO-bCZ"/>
+                                <include reference="Qq4-Nk-HdH"/>
+                                <include reference="pX8-7n-pzM"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AU2-hm-OYD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="477.5" y="-233"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Conversate Cut (2) (1).png" width="1000" height="215"/>
+    </resources>
+</document>
